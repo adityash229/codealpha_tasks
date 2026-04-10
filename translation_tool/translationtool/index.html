@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Global<span>Translate</span></h1>
+            <p>Translate text instantly across 15+ languages</p>
+        </header>
+
+        <div class="card">
+            <div class="text-input-wrapper">
+                <div class="input-box">
+                    <select id="src-lang"></select>
+                    <textarea class="from-text" placeholder="Type or paste text..."></textarea>
+                </div>
+                
+                <div class="swap-icon">
+                    <button id="swap-btn">⇄</button>
+                </div>
+
+                <div class="input-box">
+                    <select id="tgt-lang"></select>
+                    <textarea class="to-text" placeholder="Translation" readonly></textarea>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="copy-btn" class="secondary-btn">Copy Translation</button>
+                <button id="translate-btn" class="primary-btn">Translate Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
